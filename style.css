@@ -108,7 +108,6 @@ body{
 }
 
 
-
 .intro{
     margin-top: 30px;
     display: flex;
@@ -131,8 +130,9 @@ body{
     border-radius: 10px;
     background: rgb(106,0,244);
     background: linear-gradient(338deg, rgba(106,0,244,1) 0%, rgba(124,0,255,1) 35%, rgba(255,0,254,1) 100%);
-
-    
+    animation: fadeInAnimation ease 3s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
 }
 
 
@@ -339,6 +339,9 @@ body{
         flex-direction: column;
         justify-content: center;
 }
+
+
+
 @media(max-width: 1190px ){
     .topNav {
         z-index: 1;
@@ -361,6 +364,9 @@ body{
 }
 
 @media(max-width: 550px ){
+    .logo{
+        width : 400px;
+    }
     .topNav {
         z-index: 1;
         background: rgb(34,193,195);
@@ -404,6 +410,10 @@ body{
     .top-right .buys{
         display: flex;
         flex-direction: column;
+    }
+
+    .intro-text{
+        font-size: 20px;
     }
 
     .foot{
