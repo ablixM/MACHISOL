@@ -113,6 +113,10 @@ body{
     display: flex;
     flex-direction: column;
     align-items: center;
+    animation: fade-out linear;
+    animation-timeline: view();
+    animation-range: exit -100px;
+    
 }
 
 
@@ -267,7 +271,13 @@ body{
     justify-content: center;
     animation: fade-in linear forwards;
     animation-timeline: view();
-    animation-range: 250px 500px;
+    animation-range: 250px 500px; 
+}
+
+
+
+@keyframes fade-out{
+    to  {opacity: 0;}
 }
 
 .fade-land{
@@ -275,9 +285,6 @@ body{
     flex-direction: row;
     align-items: center;
     justify-content: center;
-    animation: fade-in linear forwards;
-    animation-timeline: view();
-    animation-range: 250px 500px;
 }
 
 
@@ -294,7 +301,9 @@ body{
     display: grid;
     place-items: center;
     overflow: hidden;
-   
+    animation: fade-out linear;
+    animation-timeline: view();
+    animation-range: exit -300px;
 }
 
 .slide img:hover {
@@ -306,7 +315,7 @@ body{
 .slide-track{
     display: flex;;
     width: calc(250px * 18);
-    animation: scroll 40s linear infinite;
+    animation: scroll 20s linear infinite;
     
 }
 .slide-track:hover{
