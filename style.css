@@ -113,8 +113,10 @@ body{
     display: flex;
     flex-direction: column;
     align-items: center;
-    
 }
+
+
+ 
 
 .intro-text{
     display: flex;
@@ -133,7 +135,9 @@ body{
     animation: fadeInAnimation ease 3s;
     animation-iteration-count: 1;
     animation-fill-mode: forwards;
+    
 }
+
 
 
 .landing{
@@ -141,7 +145,7 @@ body{
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: center;
+    justify-content: center;  
 }
 
 .com_img{
@@ -150,7 +154,7 @@ body{
     justify-content: center;
 }
 
-.landing .com_img img{
+.fade-land .com_img img{
     width: 80%;
 }
 
@@ -253,8 +257,34 @@ body{
 
 .buys div{
     display: flex;
-  flex-direction: column;
+    flex-direction: column;
 }
+
+.fade{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    animation: fade-in linear forwards;
+    animation-timeline: view();
+    animation-range: 250px 500px;
+}
+
+.fade-land{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    animation: fade-in linear forwards;
+    animation-timeline: view();
+    animation-range: 250px 500px;
+}
+
+
+@keyframes fade-in{
+    to {scale: 1; opacity: 1;}
+ }
+
 
 .slider{
     height: 250px;
@@ -264,6 +294,7 @@ body{
     display: grid;
     place-items: center;
     overflow: hidden;
+   
 }
 
 .slide img:hover {
@@ -276,6 +307,7 @@ body{
     display: flex;;
     width: calc(250px * 18);
     animation: scroll 40s linear infinite;
+    
 }
 .slide-track:hover{
     animation-play-state: paused;
@@ -296,7 +328,8 @@ body{
     display: flex;
     align-items: center;
     padding: 15px;
-    perspective: 100px;
+    perspective: 150px;
+  
 }
 .slide img{
     width: 100%;
