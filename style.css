@@ -1,0 +1,200 @@
+body{
+    background: rgb(136,34,195);
+    background: radial-gradient(circle, rgba(136,34,195,0.9948354341736695) 0%, rgba(107,93,214,1) 85%, rgba(81,144,230,1) 100%, rgba(45,217,253,1) 100%);
+    padding: 0;
+    margin: 0;
+}
+
+.topNav {
+    background: rgb(34,193,195);
+    background: linear-gradient(0deg, rgba(34,193,195,1) 0%, rgba(253,45,248,1) 100%);
+    overflow: hidden;
+    padding: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    animation: fadeInAnimation ease 3s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+
+@keyframes fadeInAnimation {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+.logo-div{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+}
+.logo{
+    width : 500px;
+}
+
+.top-right{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin-right: 100px;
+}
+.top-right .nav-button{
+    margin: 0 10px;
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    border-style: none;
+    border-radius: 20px;
+    padding: 5px 25px;
+
+}
+
+.top-right .nav-button {
+    align-items: center;
+    appearance: none;
+    background: linear-gradient(0deg, rgba(34,193,195,1) 0%, rgba(253,45,248,1) 100%);
+    border: 0;
+    border-radius: 15px;
+    box-shadow: rgba(45, 35, 66, .4) 0 2px 4px,rgba(45, 35, 66, .3) 0 7px 13px -3px,rgba(58, 65, 111, .5) 0 -3px 0 inset;
+    box-sizing: border-box;
+    color: #fff;
+    cursor: pointer;
+    display: inline-flex;
+    font-family: "JetBrains Mono",monospace;
+    height: 48px;
+    justify-content: center;
+    line-height: 1;
+    list-style: none;
+    overflow: hidden;
+    padding-left: 25px;
+    padding-right: 25px;
+    position: relative;
+    text-align: left;
+    text-decoration: none;
+    transition: box-shadow .15s,transform .15s;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    white-space: nowrap;
+    will-change: box-shadow,transform;
+    font-size: 18px;
+}
+
+.top-right .nav-button:focus {
+    box-shadow: #3c4fe0 0 0 0 1.5px inset, rgba(45, 35, 66, .4) 0 2px 4px, rgba(45, 35, 66, .3) 0 7px 13px -3px, #3c4fe0 0 -3px 0 inset;
+}
+
+.top-right .nav-button:hover {
+    box-shadow: rgba(45, 35, 66, .4) 0 4px 8px, rgba(45, 35, 66, .3) 0 7px 13px -3px, #3c4fe0 0 -3px 0 inset;
+    transform: translateY(-2px);
+}
+
+.top-right .nav-button:active {
+    box-shadow: #3c4fe0 0 3px 7px inset;
+    transform: translateY(2px);
+}
+
+.landing{
+    margin-top: 20px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.landing-left{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.middle{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.machi-img{
+    width: 40%;
+}
+
+.landing-text{
+    font-family: "JetBrains Mono",monospace;
+    font-size: 24px;
+    font-weight: 500;
+}
+
+h1{
+    max-width: 1000px;
+    margin: 50px auto;
+    font-size: 30px;
+    text-align: center;
+    line-height: 1;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+
+.info{
+    height: 1em;
+    overflow: hidden;
+    font-family: Arial, serif ;
+    font-size: calc(1em + 10px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.info span{
+    line-height: 2;
+    color:  rgba(253,45,248,1)  ;
+    animation: auto-scroll 15s infinite;
+}
+
+@keyframes auto-scroll{
+    0% {
+        transform: translateY(0);
+    }
+    5% {
+        transform: translateY(0);
+    }
+    10% {
+        transform: translateY(-1em);
+    }
+    30% {
+        transform: translateY(-1em);
+    }
+    35% {
+        transform: translateY(-2em);
+    }
+    55% {
+        transform: translateY(-2em);
+    }
+    60% {
+        transform: translateY(-3em)
+    }
+    80% {
+        transform: translateY(-3em);
+    }
+    85% {
+        transform: translateY(-4em);
+    }
+    100% {
+        transform: translateY(-4em);
+    }
+
+}
+
+
+
+
+
+
